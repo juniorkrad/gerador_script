@@ -364,7 +364,9 @@ exit all
 admin save
 admin software-mngt ihub database save-protected
 exit all
-show equipment ont status pon 1/1/${slot}/${portaPon} | match exact:${serialGpon}`;
+show equipment ont status pon 1/1/${slot}/${portaPon} | match exact:${serialGpon}
+show equipment ont status pon 1/1/${slot}/${portaPon} | match exact:${serialGpon}
+        `;
 
             document.getElementById('generatedCode').value = code;
         }

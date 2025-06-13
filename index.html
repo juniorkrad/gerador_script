@@ -134,7 +134,7 @@
 <body>
     <div class="container">
         <div class="form-section">
-            <h1>Formulário</h1>
+            <h1>VLAN DA PORTA</h1>
             <form id="ontForm">
                 <div>
                     <label for="olt">OLT:</label>
@@ -174,7 +174,14 @@
 
                 <div>
                     <label for="posicao">POSICAO:</label>
-                    <input type="text" id="posicao" name="posicao" required>
+                    <select id="posicao" name="posicao">
+                        <option value="">Selecione a Posição</option>
+                        <script>
+                            for (let i = 1; i <= 128; i++) {
+                                document.write(`<option value="${i}">${i}</option>`);
+                            }
+                        </script>
+                    </select>
                 </div>
 
                 <div>
